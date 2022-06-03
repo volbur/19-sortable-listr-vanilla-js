@@ -46,3 +46,8 @@ function createList() {
       draggable_list.appendChild(listItem);
     });
 }
+
+function dragStart() {
+  console.log('Event', 'dragstart');
+  dragStartIndex = +this.closest('li').getAttribute('data-index');
+}
